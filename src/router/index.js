@@ -13,6 +13,7 @@ import DashboardView from '../views/DashboardView.vue'
 // import HomeAuthView from '../views/HomeAuthView.vue'
 
 // // import component
+ import Post from '../components/post.vue'
 // import HeaderAuth from '../components/HeaderAuth.vue'
 // import HeaderNoAuth from '../components/HeaderNoAuth.vue'
 // import SearchDomaine from '../components/SearchDomaine.vue'
@@ -48,6 +49,12 @@ const routes = [
     path: '/forget',
     name: 'Reset Password',
     component: ResetPassword,
+    meta: { layout: NoFooter, public: true }
+  },
+   {
+    path: '/post',
+    name: 'post',
+    component: Post,
     meta: { layout: NoFooter, public: true }
   }
 ]
