@@ -3,9 +3,9 @@
 // export default createStore({
 //   state: {
 //     pub: [
-      
+
 //     ],
-   
+
 //   },
 
 //   getters: {
@@ -38,3 +38,31 @@
 //   modules: {
 //   },
 // });
+
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+export default new Vuex.Store({
+    state: {
+        count: 0
+    },
+    mutations: {
+        INCREASE_COUNT(state, amount = 1) {
+            state.count += Number(amount)
+        },
+        DECREASE_COUNT(state, amount = 1) {
+            state.count -= Number(amount)
+        }
+    },
+    actions: {
+        updateCount({ commit }, amount) {
+            if (amount >= 0) {
+                commit('INCREASE_COUNT', amount)
+            } else {
+                commit('DECREASE_COUNT', amount)
+            }
+        }
+    }
+})
