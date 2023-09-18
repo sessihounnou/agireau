@@ -3,6 +3,7 @@ import axios from 'axios'
 import PostLayoutComponent from '../components/home/PostLayoutComponent.vue'
 import CaptorData from '../components/captor/NavComponent.vue'
 import CaptorList from '../components/captor/CaptorListComponent.vue'
+import postComponent from '../components/postComponent.vue'
 export default {
   name: 'HomeView',
   mounted() {
@@ -19,6 +20,7 @@ export default {
   },
   components: {
     PostLayoutComponent,
+    postComponent,
     CaptorData,
     CaptorList
   },
@@ -67,6 +69,7 @@ export default {
 <template>
   <div class="grid grid-rows-3 grid-flow-col gap-4 overflow-hidden">
     <div class="row-span-3 overflow-hidden py-8">
+      <post-component />
       <post-layout-component />
       <post-layout-component />
       <post-layout-component />
