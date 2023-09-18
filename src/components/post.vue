@@ -1,7 +1,7 @@
 <template>
     <div class="grid grid-rows-2 bg-gray-100">
         <div class="border overflow-hidden shadow-sm bg-white rounded-lg  w-[640px] mx-auto sm:mt-[20px]">
-            <form action="" method="post">
+            <form action="">
                 <div class="flex mt-[-20px]">
                     <div
                         class="flex items-center justify-center w-[55px] h-[55px] rounded-full bg-primary sm:mt-[45px] sm:ml-[20px]">
@@ -41,7 +41,7 @@
             <hr class="mt-3  ">
             <p class="text-justify sm:text-[16px] italic mt-4 sm:ml-[40px]">{{ textInput }}</p>
 
-            <img :src="selectedImage.url" alt="Uploaded Image" class="rounded w-full h-[440px] mt-[10px] mx-auto ">
+            <img  v-if="selectedImage" :src="selectedImage.url" alt="Uploaded Image" class="rounded w-full h-[440px] mt-[10px] mx-auto ">
 
         </div>
 
