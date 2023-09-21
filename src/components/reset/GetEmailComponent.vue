@@ -35,10 +35,10 @@ export default {
           class="rounded-lg my-4 p-[3%] border border-1 hover:border-primary hover"
           placeholder="Ex : joe.doe@mail.com"
         />
-        <img v-if="found" src="../assets/svg/Tick@3x.svg" alt="" srcset="" />
+        <img v-if="found" src="../../assets/svg/tick.svg" alt="" srcset="" />
         <img
           v-if="noFound"
-          src="../assets/svg/Close_round4.svg"
+          src="../../assets/svg/Close_round4.svg"
           class="fill-red-100"
           alt=""
           srcset=""

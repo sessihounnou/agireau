@@ -16,13 +16,13 @@ export default {
     <div class="scroll-arrow" id="scroll-left" @click="scrollLeft()">&#8592;</div>
     <ul ref="imgList">
       <li>
-        <img src="../../../assets//data/1.jpeg" />
+        <img src="../../../assets/data/1.jpeg" />
       </li>
       <li>
-        <img src="../../../assets//data/2.jpeg" />
+        <img src="../../../assets/data/2.jpeg" />
       </li>
       <li>
-        <img src="../../../assets//data/3.jpeg" />
+        <img src="../../../assets/data/3.jpeg" />
       </li>
       <li>
         <img

@@ -5,14 +5,27 @@ import ImageCarousselComponent from './post/ImageCarousselComponent.vue'
 
 export default {
   name: 'PostLayoutComponent',
-  components: { ProfilDetailComponent, CommentComponent, ImageCarousselComponent }
+  components: { ProfilDetailComponent, CommentComponent, ImageCarousselComponent },
+  data() {
+    return {
+      // Données que vous souhaitez transmettre à ProfilDetailComponent
+      profileData: {
+        name: 'Ray Newman',
+        location: 'Porto-novo',
+        date: 'Jeudi 01 juin 2023'
+      },
+      otherData: {
+        // Autres données...
+      }
+    }
+  }
 }
 </script>
 <template>
   <div class="flex justify-left my-8 sm:mx-4">
     <div class="bg-gray-100 overflow-hidden pb-8 -pt-8 rounded-lg">
       <!-- Profil details -->
-      <section><ProfilDetailComponent /></section>
+      <section><ProfilDetailComponent :profileData="profileData" :otherData="otherData" /></section>
       <!-- commentaire -->
       <section><CommentComponent /></section>
       <!-- illustration - videos - photos -->

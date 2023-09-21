@@ -50,10 +50,10 @@ export default {
           />
         </div>
         <p class="text-right -mt-2 mb-8 text-gray-500 text-[70%]">00:45</p>
-        <img v-if="found" src="../assets/svg/Tick@3x.svg" alt="" srcset="" />
+        <img v-if="found" src="../../assets/svg/tick.svg" alt="" srcset="" />
         <img
           v-if="noFound"
-          src="../assets/svg/Close_round4.svg"
+          src="../../assets/svg/Close_round4.svg"
           class="fill-red-100"
           alt=""
           srcset=""
