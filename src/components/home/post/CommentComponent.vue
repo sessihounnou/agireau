@@ -1,4 +1,5 @@
 <script>
+import axios from "axios";
 export default {
   name: 'CommentComponent',
   data() {
@@ -10,6 +11,9 @@ export default {
         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae possimus animi nesciuntiusto optio minus quidem nemo cupiditate sapiente non provident facere sunt esse eum reiciendis,atque error accusantium suscipit.',
       texteRestant: ''
     }
+  },
+  created(){
+    axios.get('http://localhost:3000/texteAffiche');
   },
   mounted() {
     this.verifierLongueurTexte()
