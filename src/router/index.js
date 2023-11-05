@@ -34,13 +34,13 @@ const routes = [
     meta: { layout: NoFooter, public: true }
   },
   {
-    path: '/home-2',
+    path: '/',
     name: 'Acceuil',
     component: HomeView,
     meta: { layout: NoFooter, public: true }
   },
   {
-    path: '/',
+    path: '/stats',
     name: 'Dashboard',
     component: DashboardView,
     meta: { layout: NoFooter, public: true }
