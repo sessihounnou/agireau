@@ -25,6 +25,9 @@ export default {
     CaptorList
   },
   methods: {
+    captorSelected(data) {
+      console.log(data)
+    },
     async getData() {
       let thj = this
       console.log(this.listOfCap)
@@ -79,7 +82,7 @@ export default {
     <div class="row-span-2 py-16 mx-16 hidden sm:block">
       <div class="border-b-2 border-primary">
         <div class="text-center font-bold">Tous les capteurs</div>
-        <captor-list />
+        <captor-list @captor-selected="captorSelected" />
       </div>
       <h1 class="text-center text-xl my-4 bg-white py-2 rounded-md cursor-pointer text-gray-600">
         Derniers relevés
